@@ -1,4 +1,11 @@
-﻿<h3 id="top">Contents</h3>
+﻿@page "/"
+@page "/contents"
+
+<PageTitle>Contents</PageTitle>
+<div class="container p-4">
+    <Header></Header>
+</div>
+<h3>Contents</h3>
 <table class="table table-striped table-bordered table-responsive w-auto m-auto">
 <thead>
 <tr>
@@ -12,7 +19,7 @@
 <tbody>
 <tr>
     <td>
-        <a href="#csharp">Язык программирования C#</a>
+        <NavLink class="nav-link" href="counter">Язык программирования C#</NavLink>
     </td>
     <td>
         <i class="bi bi-star-fill"></i>
@@ -29,7 +36,7 @@
 </tr>
 <tr>
     <td>
-        <a href="#dotnet">.NET Framework / .NET Core</a>
+        <NavLink class="nav-link" href="net">.NET Framework / .NET Core</NavLink>
     </td>
     <td>
         <i class="bi bi-star-fill"></i>
@@ -46,7 +53,7 @@
 </tr>
 <tr>
     <td>
-        <a href="#quality">Контроль качества кода / Рефакторинг</a>
+        <NavLink class="nav-link" href="codeQuality">Контроль качества кода / Рефакторинг</NavLink>
     </td>
     <td>
         <i class="bi bi-star-half"></i>
@@ -63,7 +70,7 @@
 </tr>
 <tr>
     <td>
-        <a href="#concurrency">Многопоточность и Асинхронное программирование</a>
+        <NavLink class="nav-link" href="concurrency">Многопоточность и Асинхронное программирование</NavLink>
     </td>
     <td></td>
     <td>
@@ -78,7 +85,7 @@
 </tr>
 <tr>
     <td>
-        <a href="#testing">Модульное и интеграционное тестирование</a>
+        <NavLink class="nav-link" href="testing">Модульное и интеграционное тестирование</NavLink>
     </td>
     <td>
         <i class="bi bi-star-half"></i>
@@ -95,7 +102,7 @@
 </tr>
 <tr>
     <td>
-        <a href="#algorithms">Алгоритмы и Структуры Данных</a>
+        <NavLink class="nav-link" href="algorithms">Алгоритмы и Структуры Данных</NavLink>
     </td>
     <td>
         <i class="bi bi-star-half"></i>
@@ -112,7 +119,7 @@
 </tr>
 <tr>
     <td>
-        <a href="#oop">Принципы объектно-ориентированного программирования (ООП)</a>
+        <NavLink class="nav-link" href="oop">Принципы объектно-ориентированного программирования (ООП)</NavLink>
     </td>
     <td>
         <i class="bi bi-star-fill"></i>
@@ -129,7 +136,7 @@
 </tr>
 <tr>
     <td>
-        <a href="#patterns">Шаблоны и принципы проектирования, SOLID</a>
+        <NavLink class="nav-link" href="patterns">Шаблоны и принципы проектирования, SOLID</NavLink>
     </td>
     <td></td>
     <td>
@@ -144,22 +151,7 @@
 </tr>
 <tr>
     <td>
-        <a href="#ddd">Предметно-ориентированное проектирование (Domain-driven design, DDD)</a>
-    </td>
-    <td></td>
-    <td>
-        <i class="bi bi-star-fill"></i>
-    </td>
-    <td>
-        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-    </td>
-    <td>
-        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-    </td>
-</tr>
-<tr>
-    <td>
-        <a href="#dalpatterns">Шаблоны уровня доступа к данным</a>
+        <NavLink class="nav-link" href="ddd">Предметно-ориентированное проектирование (Domain-driven design, DDD)</NavLink>
     </td>
     <td></td>
     <td>
@@ -174,7 +166,22 @@
 </tr>
 <tr>
     <td>
-        <a href="#dal">Фреймворки доступа к данным: Entity Framework, NHibernate, Dapper</a>
+        <NavLink class="nav-link" href="dalpatterns">Шаблоны уровня доступа к данным</NavLink>
+    </td>
+    <td></td>
+    <td>
+        <i class="bi bi-star-fill"></i>
+    </td>
+    <td>
+        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+    </td>
+    <td>
+        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+    </td>
+</tr>
+<tr>
+    <td>
+        <NavLink class="nav-link" href="dal">Фреймворки доступа к данным: Entity Framework, NHibernate, Dapper</NavLink>
     </td>
     <td>
         <i class="bi bi-star-half"></i>
@@ -191,7 +198,7 @@
 </tr>
 <tr>
     <td>
-        <a href="#arch">Архитектурные шаблоны и Атрибуты качества (Quality Attributes)</a>
+        <NavLink class="nav-link" href="architecture">Архитектурные шаблоны и Атрибуты качества (Quality Attributes)</NavLink>
     </td>
     <td></td>
     <td>
@@ -206,7 +213,7 @@
 </tr>
 <tr>
     <td>
-        <a href="#asp">HTTP, REST, Веб-фреймворки: ASP.NET MVC / Web API / Core</a>
+        <NavLink class="nav-link" href="asp">HTTP, REST, Веб-фреймворки: ASP.NET MVC / Web API / Core</NavLink>
     </td>
     <td>
         <i class="bi bi-star-fill"></i>
@@ -223,7 +230,7 @@
 </tr>
 <tr>
     <td>
-        <a href="#js">Фронтенд разработка: JavaScript / TypeScript / SPA фреймворки</a>
+        <NavLink class="nav-link" href="js">Фронтенд разработка: JavaScript / TypeScript / SPA фреймворки</NavLink>
     </td>
     <td>
         <i class="bi bi-star-fill"></i>
@@ -240,7 +247,7 @@
 </tr>
 <tr>
     <td>
-        <a href="#security">Веб-безопасность, Шифрование данных, OWASP</a>
+        <NavLink class="nav-link" href="security">Веб-безопасность, Шифрование данных, OWASP</NavLink>
     </td>
     <td>
         <i class="bi bi-star-half"></i>
@@ -258,7 +265,7 @@
 
 <tr>
     <td>
-        <a href="#distributed">Распределенные системы и Микросервисная архитектура</a>
+        <NavLink class="nav-link" href="distributed">Распределенные системы и Микросервисная архитектура</NavLink>
     </td>
     <td></td>
     <td></td>
@@ -272,7 +279,7 @@
 
 <tr>
     <td>
-        <a href="#db">Базы данных: T-SQL, MS SQL, NoSQL</a>
+        <NavLink class="nav-link" href="db">Базы данных: T-SQL, MS SQL, NoSQL</NavLink>
     </td>
     <td>
         <i class="bi bi-star-fill"></i>
@@ -290,7 +297,7 @@
 
 <tr>
     <td>
-        <a href="#git">Системы контроля версий: Git, Mercurial, TFS</a>
+        <NavLink class="nav-link" href="git">Системы контроля версий: Git, Mercurial, TFS</NavLink>
     </td>
     <td>
         <i class="bi bi-star-half"></i>
@@ -307,7 +314,7 @@
 </tr>
 <tr>
     <td>
-        <a href="#process">Методологии разработки: Scrum, Kanban и Scrumban</a>
+        <NavLink class="nav-link" href="process">Методологии разработки: Scrum, Kanban и Scrumban</NavLink>
     </td>
     <td></td>
     <td>

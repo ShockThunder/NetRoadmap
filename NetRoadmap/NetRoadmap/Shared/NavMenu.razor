@@ -1,0 +1,95 @@
+﻿<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; height: 100%">
+    <span class="fs-4">Net Roadmap</span>
+    <hr>
+    <div class="position-sticky pt-3">
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li>
+                <NavLink class="nav-link text-white" href="contents">
+                    Contents
+                </NavLink>
+            </li>
+            <li>
+                <NavLink class="nav-link text-white" href="csharp">
+                    Язык программирования C#
+                </NavLink>
+            </li>
+            <li>
+                <NavLink class="nav-link text-white" href="net">
+                    .NET Framework / .NET Core
+                </NavLink>
+            </li>
+            <li>
+                <NavLink class="nav-link text-white" href="codeQuality">
+                    Контроль качества кода / Рефакторинг
+                </NavLink>
+            </li>
+            <li>
+                <NavLink class="nav-link text-white" href="concurrency">
+                    Многопоточность и Асинхронное программирование
+                </NavLink>
+            </li>
+            <li>
+                <NavLink class="nav-link text-white" href="testing">
+                    Модульное и интеграционное тестирование
+                </NavLink>
+            </li>
+        </ul>
+        </div>
+</div>
+
+
+@* <div class="top-row ps-3 navbar navbar-dark"> *@
+@*     <div class="container-fluid"> *@
+@*         <a class="navbar-brand" href="">NetRoadmap</a> *@
+@*         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu"> *@
+@*             <span class="navbar-toggler-icon"></span> *@
+@*         </button> *@
+@*     </div> *@
+@* </div> *@
+@* *@
+@* <div class="@NavMenuCssClass" @onclick="ToggleNavMenu"> *@
+@*     <nav class="flex-column"> *@
+@*         <div class="nav-item px-3"> *@
+@*             <NavLink class="nav-link" href="contents" Match="NavLinkMatch.All"> *@
+@*                 Contents *@
+@*             </NavLink> *@
+@*         </div> *@
+@*         <div class="nav-item px-3"> *@
+@*             <NavLink class="nav-link" href="csharp"> *@
+@*                 Язык программирования C# *@
+@*             </NavLink> *@
+@*         </div> *@
+@*         <div class="nav-item px-3"> *@
+@*             <NavLink class="nav-link" href="net"> *@
+@*                 .NET Framework / .NET Core *@
+@*             </NavLink> *@
+@*         </div> *@
+@*         <div class="nav-item px-3"> *@
+@*             <NavLink class="nav-link" href="codeQuality"> *@
+@*                 Контроль качества кода / Рефакторинг *@
+@*             </NavLink> *@
+@*         </div> *@
+@*         <div class="nav-item px-3"> *@
+@*             <NavLink class="nav-link" href="concurrency"> *@
+@*                 Многопоточность и Асинхронное программирование *@
+@*             </NavLink> *@
+@*         </div> *@
+@*         <div class="nav-item px-3"> *@
+@*             <NavLink class="nav-link" href="testing"> *@
+@*                 Модульное и интеграционное тестирование *@
+@*             </NavLink> *@
+@*         </div> *@
+@*     </nav> *@
+@* </div> *@
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+}
