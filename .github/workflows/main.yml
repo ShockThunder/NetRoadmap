@@ -29,7 +29,7 @@ jobs:
             dotnet-version: '6.0.x'
         # publishes Blazor project to the release-folder
         - name: Publish .NET Project
-          run: dotnet publish NetRoadmap.csproj -c Release -o release --nologo
+          run: dotnet publish NetRoadmap/NetRoadmap/NetRoadmap.csproj -c Release -o release --nologo
           
         # changes the base-tag in index.html from '/' to 'NetRoadmap' to match GitHub Pages repository subdirectory
         - name: Change base-tag in index.html from / to NetRoadmap
