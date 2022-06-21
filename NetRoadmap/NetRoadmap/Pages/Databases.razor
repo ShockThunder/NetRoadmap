@@ -1,0 +1,202 @@
+﻿@page "/db"
+<h2>Базы данных: T-SQL, MS SQL, NoSQL</h2>
+<table class="table table-striped table-bordered table-responsive w-auto m-auto">
+    <thead>
+    <tr>
+        <th scope="col">Уровень</th>
+        <th scope="col">Темы</th>
+        <th scope="col">Материалы</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i>
+        </td>
+        <td>Концепция нормализации данных, Нормальные формы</td>
+        <td>
+            <a href="https://habr.com/ru/post/254773/">Нормализация отношений. Шесть нормальных форм</a> <i class="bi bi-circle-fill"></i>
+            <a href="https://support.microsoft.com/ru-ru/help/283878/description-of-the-database-normalization-basics">Описание основных приемов нормализации базы данных</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i>
+        </td>
+        <td>Создание таблиц, Выбор типов данных</td>
+        <td>
+            <a href="https://docs.microsoft.com/ru-ru/sql/relational-databases/tables/create-tables-database-engine?view=sql-server-ver15">Создание таблиц</a> <i class="bi bi-circle-fill"></i>
+            <a href="https://docs.microsoft.com/ru-ru/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver15">Типы данных</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i>
+        </td>
+        <td> Создание ограничений: NOT NULL, UNIQUE, CHECK, DEFAULT, PRIMARY KEY, FOREIGN KEY</td>
+        <td>
+            <a href="https://docs.microsoft.com/ru-ru/sql/relational-databases/tables/unique-constraints-and-check-constraints?view=sql-server-ver15">Ограничения уникальности и проверочные ограничения</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i>
+        </td>
+        <td>Моделирование отношений: один к одному, один ко многим, многие ко многим, Primary Key &amp; Foreign Key</td>
+        <td>
+            <a href="http://office-menu.ru/uroki-sql/41-tipy-svyazej-v-relyatsionnykh-bazakh-dannykh">Типы связей в реляционных базах данных</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i>
+        </td>
+        <td>Работа с оператором SELECT, Использование операторов WHERE, INNER/LEFT/RIGHT/CROSS JOIN, GROUP BY, HAVING, DISTINCT</td>
+        <td>
+            <a href="https://docs.microsoft.com/ru-ru/sql/t-sql/queries/select-examples-transact-sql?view=sql-server-ver15">Примеры использования инструкции SELECT</a> <i class="bi bi-circle-fill"></i>
+            <a href="http://www.sql-tutorial.ru/ru/book_having_clause.html">Предложение HAVING</a> <i class="bi bi-circle-fill"></i>
+            <a href="http://www.sql-tutorial.ru/ru/book_group_by_clause.html">Предложение GROUP BY</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i>
+        </td>
+        <td>Работа агрегатными функциями: SUM, MIN, MAX, AVG, COUNT</td>
+        <td>
+            <a href="https://www.sql.ru/docs/sql/u_sql/ch6.shtml">Обобщение данных с помощью агрегатных функций</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i>
+        </td>
+        <td>Модификация данных с использованием INSERT, UPDATE, DELETE операторов</td>
+        <td>
+            <a href="https://habr.com/ru/post/255523/">Учебник по языку SQL (DDL, DML) на примере диалекта MS SQL Server. Часть вторая</a> <i class="bi bi-circle-fill"></i>
+            <a href="http://www.quizful.net/interview/sql/delete-truncate-difference">SQL команды DELETE и TRUNCATE</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Работа с операторами UNION, UNION ALL, INTERSECT, EXCEPT</td>
+        <td>
+            <a href="http://www.manifold.net/doc/radian/union___except___intersect.htm">UNION / EXCEPT / INTERSECT</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Работа с хранимыми процедурами, функциями и триггерами</td>
+        <td>
+            <a href="https://ivan-shamaev.ru/t-sql-fundamentals-and-examples/">Основы T-SQL и примеры — функции (UDF), триггеры, процедуры, курсоры, циклы</a>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Использование SQL профайлера</td>
+        <td>
+            <a href="https://ausevich.ru/subd/rabota-s-profiler-sql-server-primery-nastrojki-trassirovok/">РАБОТА С SQL SERVER PROFILER. ПРИМЕРЫ НАСТРОЙКИ ТРАССИРОВОК</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Кластерные и некластерные индексы</td>
+        <td>
+            <a href="https://docs.microsoft.com/ru-ru/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver15">Описания кластеризованных и некластеризованных индексов</a> <i class="bi bi-circle-fill"></i>
+            <a href="https://habr.com/ru/post/247373/">14 вопросов об индексах в SQL Server, которые вы стеснялись задать</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>SQL vs NoSQL</td>
+        <td>
+            <a href="https://habr.com/ru/company/ruvds/blog/324936/">SQL или NoSQL — вот в чём вопрос</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Необходимость денормализации, Техники денормализации данных</td>
+        <td>
+            <a href="https://habr.com/ru/post/64524/">Денормализация БД. Зачем? Когда? Как?</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Работа с оконными функциями: OVER, ROW_NUMBER, RANK, NTILE...</td>
+        <td>
+            <a href="http://www.sql-tutorial.ru/ru/book_window_functions.html">Оконные функции</a> <i class="bi bi-circle-fill"></i>
+            <a href="https://www.fastreport.ru/ru/blog/251/show/">Оконные функции – то, что должен знать каждый T-SQL программист</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Работа с СTE, Рекурсивные CTE</td>
+        <td>
+            <a href="http://www.sql-tutorial.ru/ru/book_common_table_expressions_cte.html">Общие табличные выражения</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Анализ плана выполнения запроса: Nested Loops, Index Seek, Index Scan, Key, Lookup...</td>
+        <td>
+            <a href="https://docs.microsoft.com/ru-ru/sql/relational-databases/performance/display-an-actual-execution-plan?view=sql-server-ver15">Отображение действительного плана выполнения</a>
+            <i class="bi bi-circle-fill"></i>
+            <a href="http://sql-ex.ru/blogs/optimization/exploring_query_plans_in_sql.html">Изучение плана запроса в SQL</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Работа с транзакциями, ACID, Уровни изоляций транзакций, Snapshot, Мертвые блокировки</td>
+        <td>
+            <a href="https://www.tutorialspoint.com/t_sql/t_sql_transactions.htm">T-SQL - Transactions</a>
+            <i class="bi bi-circle-fill"></i>
+            <a href="https://blog.yugabyte.com/a-primer-on-acid-transactions/">A Primer on ACID Transactions: The Basics Every Cloud App Developer Must Know</a>
+            <i class="bi bi-circle-fill"></i>
+            <a href="https://www.sqlshack.com/snapshot-isolation-in-sql-server/">Snapshot Isolation in SQL Server</a>
+            <i class="bi bi-circle-fill"></i>
+            <a href="https://dev.to/integerman/sql-server-transactions-read-modes-locks-and-deadlocks-4kgj">
+                SQL Server Transactions and Isolation Levels
+            </a>
+        </td>
+    </tr>
+
+
+    </tbody>
+</table>
+
+<h3>Контрольные вопросы:</h3>
+<ul>
+    <li>Какие нормальные формы Вам знакомы?</li>
+    <li>Сравните нормализацию и денормализацию баз данных.</li>
+    <li>Как моделируется отношение "многие ко многим" в MS SQL?</li>
+    <li>В чем разница между Primary Key и Foreign Key?</li>
+    <li>В чем разница между операторами LEFT JOIN vs INNER JOIN?</li>
+    <li>В чем разница между операторами CROSS JOIN и CROSS APPLY?</li>
+    <li>В чем отличия Кластерных индексов от Некластерных?</li>
+    <li>Для чего применяется оператор INCLUDE при создании некластерного индекса?</li>
+    <li>Какие уровни изоляций транзакций существуют?</li>
+    <li>Опишите свойства ACID.</li>
+    <li>Как избегать мертвых блокировок при работе с транзакциями?</li>
+    <li>В чем разница между временными таблицами и CTE?</li>
+</ul>
