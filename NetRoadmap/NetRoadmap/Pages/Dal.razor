@@ -1,0 +1,191 @@
+﻿@page "/dal"
+<h2>Фреймворки доступа к данным: Entity Framework, Dapper</h2>
+<table class="table table-striped table-bordered table-responsive w-auto m-auto">
+    <thead>
+    <tr>
+        <th scope="col">Уровень</th>
+        <th scope="col">Темы</th>
+        <th scope="col">Материалы</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i>
+        </td>
+        <td>ADO.NET, Подключенный и автономный режимы, Классы SqlCommand, SqlDataReader, SqlDataAdapter, DataSet, DataTable</td>
+        <td>
+
+            <a href="https://metanit.com/sharp/adonet/">Руководство по ADO.NET и работе с базами данных</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i>
+        </td>
+        <td>Entity Framework 6 vs Entity Framework Core</td>
+        <td>
+            <a href="https://docs.microsoft.com/ru-ru/ef/efcore-and-ef6/">Сравнение EF Core и EF6</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i>
+        </td>
+        <td>Подходы Code First и Database First</td>
+        <td>
+            <a href="https://www.ryadel.com/en/code-first-model-first-database-first-vs-comparison-orm-asp-net-core-entity-framework-ef-data/">Code-First vs Model-First vs Database-First: Pros and Cons</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i>
+        </td>
+        <td>Создание моделей, Работа с классами DbContext, DbSet</td>
+        <td>
+            <a href="https://www.learnentityframeworkcore.com/dbcontext">
+                The Entity Framework Core DbContext
+            </a> <i class="bi bi-star-fill"></i>
+            <a href="https://www.learnentityframeworkcore.com/dbset">
+                The Entity Framework Core DbSet
+            </a> <i class="bi bi-star-fill"></i>
+            <a href="https://docs.microsoft.com/en-us/ef/core/modeling/">
+                Creating and configuring a model
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i>
+        </td>
+        <td>Чтение данных при помощи LINQ, Интерфейс IQueyrable vs IEnumerable, Tracking vs No-Tracking</td>
+        <td>
+            <a href="https://docs.microsoft.com/en-us/ef/core/querying/">Querying Data</a>
+            <i class="bi bi-star-fill"></i>
+            <a href="https://metanit.com/sharp/entityframeworkcore/5.6.php">IEnumerable и IQueryable</a>
+            <i class="bi bi-star-fill"></i>
+            <a href="https://metanit.com/sharp/entityframeworkcore/5.7.php">Отслеживание объектов и AsNoTracking</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i>
+        </td>
+        <td>Ленивая загрузка зависимых данных, Проблема N+1</td>
+        <td>
+            <a href="https://www.learnentityframeworkcore.com/lazy-loading">
+                Lazy Loading Related Data In Entity Framework Core
+            </a> <i class="bi bi-star-fill"></i>
+            <a href="https://www.brentozar.com/archive/2018/07/common-entity-framework-problems-n-1/">
+                Common Entity Framework Problems: N + 1
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i>
+        </td>
+        <td>Сохрание данных</td>
+        <td>
+            <a href="https://docs.microsoft.com/en-us/ef/core/saving/">
+                Saving Data
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Архитектура Entity Framework</td>
+        <td>
+            <a href="https://www.entityframeworktutorial.net/EntityFramework-Architecture.aspx">Entity Framework Architecture</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Моделирование отношений один ко многим и многие ко многим в Entity Framework Core</td>
+        <td>
+            <a href="https://www.learnentityframeworkcore.com/configuration/many-to-many-relationship-configuration">
+                Configuring Many To Many Relationships in Entity Framework Core
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Работа с состояниями сущностей: Added, Unchanged, Modified, Deleted, Detached</td>
+        <td>
+            <a href="https://docs.microsoft.com/en-us/ef/ef6/saving/change-tracking/entity-state">
+                Working with entity states
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Работа с Fluent API</td>
+        <td>
+            <a href="https://www.learnentityframeworkcore.com/configuration/fluent-api">
+                Fluent API Configuration
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Работа с Dapper</td>
+        <td>
+            <a href="https://dapper-tutorial.net/dapper">
+                Dapper
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Работа с миграциями</td>
+        <td>
+            <a href="https://www.learnentityframeworkcore.com/migrations">
+                Entity Framework Core Migrations
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Транзакции в Entity Framework Core</td>
+        <td>
+            <a href="https://docs.microsoft.com/ru-ru/ef/core/saving/transactions">
+                Использование транзакций
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Наследование в EF Core: Table Per Hierarchy, Table Per Type, Table Per Concrete Type</td>
+        <td>
+            <a href="https://www.learnentityframeworkcore.com/inheritance">Inheritance in Entity Framework Core</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+
+<h3>Контрольные вопросы:</h3>
+<ul>
+    <li>В чем разница между Code First и Database First в Entity Framework?</li>
+    <li>Что такое N+1 проблема?</li>
+    <li>В чем разница между интерфейсами IQueyrable и IEnumerable?</li>
+    <li>В фундаментальная разница между Entity Framework и Dapper?</li>
+    <li>Какими классами в Entity Framework представлены шаблоны Unit Of Work и Repository?</li>
+    <li>Как моделируется отношение "многие ко многим" в Entity Framework Core?</li>
+</ul>

@@ -1,0 +1,129 @@
+﻿@page "/dalpatterns"
+<h2>Шаблоны уровня доступа к данным</h2>
+<table class="details">
+    <thead>
+    <tr>
+        <th>Уровень</th>
+        <th>Темы</th>
+        <th>Материалы</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i>
+        </td>
+        <td>
+            Объектно-реляционное отображение (ORM)
+        </td>
+        <td>
+            <a href="https://ru.bmstu.wiki/ORM_(Object-Relational_Mapping)">ORM (Object-Relational Mapping)</a>
+            <i class="bi bi-circle-fill"></i>
+            <a href="http://internetka.in.ua/orm-intro/">Введение в ORM</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i>
+        </td>
+        <td>Шаблон Репозиторий (Repository)</td>
+        <td>
+            <a href="https://habr.com/ru/post/248505/">Паттерн «Репозиторий». Основы и разъяснения</a>
+            <i class="bi bi-circle-fill"></i>
+            <a href="https://habr.com/ru/post/335856/">EntityFramework: (анти)паттерн Repository</a>
+            <i class="bi bi-circle-fill"></i>
+            <a href="https://blog.byndyu.ru/2011/01/domain-driven-design-repository.html">Domain-Driven Design: Repository</a>
+            <i class="bi bi-circle-fill"></i>
+            <a href="https://www.amazon.com/Patterns-Enterprise-Application-Architecture-Martin/dp/0321127420">Книга Patterns of Enterprise Application Architecture by Martin Fowler, Глава 13</a>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i>
+        </td>
+        <td>Шаблон Спецификация (Specification)</td>
+        <td>
+            <a href="https://youit.pro/map/dotnetweb"></a>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Шаблон Единица работы (Unit Of Work)</td>
+        <td>
+            <a href="http://design-pattern.ru/patterns/unit-of-work.html">Описание Unit of Work</a> <i class="bi bi-circle-fill"></i>
+            <a href="https://habr.com/ru/post/238737/">CRUD Operations Using the Generic Repository Pattern and Unit of Work in MVC </a>
+
+            <i class="bi bi-circle-fill"></i>
+            <a href="https://www.amazon.com/Patterns-Enterprise-Application-Architecture-Martin/dp/0321127420">Книга Patterns of Enterprise Application Architecture, Глава 11</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Шаблон Объект запроса (Query Object)</td>
+        <td>
+            <a href="http://design-pattern.ru/patterns/query-object.html">Query Object (Объект-запрос)</a>
+            <i class="bi bi-circle-fill"></i>
+            <a href="http://blog.antidasoftware.com/2014/08/dapper-queryobject.html">Работа с Dapper + Query Object</a>
+            <i class="bi bi-circle-fill"></i>
+            <a href="https://blog.byndyu.ru/2013/03/dapper-queryobject-orm.html">Dapper + QueryObject, как замена ORM</a>
+            <i class="bi bi-circle-fill"></i>
+            <a href="https://www.amazon.com/Patterns-Enterprise-Application-Architecture-Martin/dp/0321127420">Книга Patterns of Enterprise Application Architecture by Martin Fowler, Глава 13</a>
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Шаблон Активная запись (Active Record)</td>
+        <td>
+            <a href="http://design-pattern.ru/patterns/active-record.html">Active Record (Активная запись)</a> <i class="bi bi-circle-fill"></i>
+            <a href="https://habr.com/ru/post/155545/">Active Record Pattern</a>
+            <i class="bi bi-circle-fill"></i>
+            <a href="https://www.amazon.com/Patterns-Enterprise-Application-Architecture-Martin/dp/0321127420">Книга Patterns of Enterprise Application Architecture by Martin Fowler, Глава 10</a>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>Шаблон Репозиторий в DDD</td>
+        <td>
+            <a href="https://blog.byndyu.ru/2011/01/domain-driven-design-repository.html">Domain-Driven Design: Repository</a>
+            <i class="bi bi-circle-fill"></i>
+            <a href="https://docs.microsoft.com/ru-ru/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design">Проектирование уровня сохраняемости инфраструктуры </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </td>
+        <td>
+            Оптимистическая блокировка, Пессимистическая блокировка
+        </td>
+        <td>
+            <a href="https://www.amazon.com/Patterns-Enterprise-Application-Architecture-Martin/dp/0321127420">Книга Patterns of Enterprise Application Architecture, Главы 5, 16</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+
+<h3>Контрольные вопросы:</h3>
+<ul>
+    <li>Какую проблему решает технология ORM?</li>
+    <li>Как сочетаются вместе шаблоны Unit of Work и Repository?</li>
+    <li>Можно ли совмещать шаблоны Repository и Specification?</li>
+    <li>В чем смысл шаблона Specification?</li>
+    <li>Нужно ли создавать репозиторий для моделей, которые не являются корнями агрегатов?</li>
+    <li>Является ли шаблон Active Record анти-шаблоном?</li>
+    <li>Как работает механизм Оптимистической блокировки?</li>
+</ul>
